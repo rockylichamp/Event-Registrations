@@ -1,0 +1,10 @@
+Hello Sir/Madam,
+
+You have been successfully registered for &eventName&. &name& will be collecting tickets for &number& people. This is your confirmation mail for the registered event.
+
+Thank you for registering. Hope you enjoy the event.
+
+Thanks,
+Harish Indalkar.
+Customer Care Service.
+Ph+ 646-732-1776 

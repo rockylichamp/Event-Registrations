@@ -1,0 +1,46 @@
+<main>
+    <div class="container">
+        <div >
+            <h1>{{form.title}}</h1>
+            <br>
+            <p class="entire-black reg-desc">{{form.description}}</p>
+            <br>
+            <p class="entire-black reg-date-loc">{{form.date}} | {{form.location}} </p>
+            <p class="entire-black reg-date-loc">{{form.ageRestriction}} | {{form.genderRestriction}} </p>
+            <p class="entire-black reg-date-loc" id="reg-cost">${{form.cost}}</p>
+        </div>
+
+        <div>
+            <form method="POST" action="/registerFormToUser/{{form._id}}" id="registerForm">
+                <div class="form-group">
+                    <label for="person-name-{{form._id}}" class="col-form-label "></label>
+                    <input name="name"  type="text" class="form-control personCollectingTicket " placeholder="Name of Person" id="person-name-{{form._id}}">
+                </div>
+
+                <div class="form-group">
+                    <label for="noOfPeople-{{form._id}}" class="col-form-label "></label>
+                    <input name="number"  type="numbers" placeholder="Number of people attending event" class="form-control noOfPeopleComming" id="noOfPeople-{{form._id}}">
+                </div>
+                
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button id="confirm-{{form._id}}" type="submit" class=" editForm nav-custom-butt disabled btn btn-primary">Confirm</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div>
+            <p class="entire-black" id="cost-display"></p>
+        </div>
+
+        <div>
+            <p class="entire-black">Note:</p>
+            <ul class="note">
+                <li>Only 10 tickets Can be booked by a Person.</li>
+                <li>Book now and Pay at the event.</li>
+            </ul>
+        </div>
+    </div>
+</main>

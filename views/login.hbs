@@ -1,0 +1,114 @@
+<div class="container-fluid" style="min-height: 100vh">
+    <div class="row">
+        <div class="col-sm-6 login-back">
+            <div class="h-100 d-inline-block title-home login-back">
+                <div class="title-home">
+                    <p>Book my Event</p>
+                </div>
+                {{!-- <p>Please make a good start with us. Hope you enjoy a lot.</p> --}}
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="container-fluid right-login">
+
+                <div style="text-align: center">
+                    <h1>If you are an existing user than please login. And if not please make a good start by
+                        creating your account with us.</h1>
+                </div>
+
+                <div>
+                    <p class="entire-black error">{{errorLogin}}</p>
+                </div>
+
+                <form id="signin" method="POST" action="/login" class="navbar-form signup-form navbar-right" role="form">
+                    <div class="input-group">
+                        <label for="email" class="disabled"></label>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+                    </div>
+
+                    <div class="input-group ">
+                        {{!-- <label for="password" class="disabled"></label> --}}
+                        <label for="password" class="disabled"></label>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary marg" id="login-btn">Login</button>
+                </form>
+                {{!-- <div>
+                    <a id="pforget" href="" rel="noopener">Forgot password?</a>
+                </div> --}}
+            </div>
+
+            <div>
+                {{#each error}}
+                <p class="entire-black error">{{this}}</p>
+                {{/each}}
+                {{#if success}}
+                <p userShow>{{successMessage}}</p>
+                {{/if}}
+            </div>
+
+            <div class="" id="signup-div">
+                <div id="signup-header" class="">
+                    <h2>Sign Up</h2>
+                </div>
+                <div role="tabpanel" class="tab-pane fade in active" id="signup-tab">
+                    <form method="POST" action="/registrationUser" id="signup-form" style="padding-top: 20px">
+                        <div id="form-group-fname" class="input-group">
+                            <label for="s-name" class="disabled"></label>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input required id="s-name" name="First_Name" type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <br>
+                        <div id="form-group-lname" class="input-group">
+                            <label for="l-name" class="disabled"></label>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input required id="l-name" name="Last_Name" type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <br>
+                        <div id="form-group-email" class="input-group">
+                            <label for="s-email" class="disabled"></label>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input required id="s-email" name="email" type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <br>
+                        <div id="form-group-date" class="input-group">
+                            <label for="dob" class="disabled"></label>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input required id="dob" name="dob" type="date" class="form-control" placeholder="Date of Birth">
+                        </div>
+                        <br>
+                        <div id="form-group-password" class="input-group">
+                            <label for="s-password" class="disabled"></label>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input required id="s-password" name="password" type="password" class="form-control"
+                                placeholder="Password">
+                        </div>
+                        <br>
+                        <div id="form-group-r-password" class="input-group">
+                            <label for="r-password" class="disabled"></label>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input required id="r-password" name="repassword" type="password" class="form-control"
+                                placeholder="Re-Enter Password">
+                        </div>
+                        <br>
+                        <div class="form-group ">
+                            <button name="signup" type="submit" class="btn btn-success form-control signup-button" id="signup-btn"
+                                value="Sign Up!">Sign Up! </button>
+                        </div>
+
+                    </form>
+                    {{!-- {{#each error}}
+                    <p class="entire-black">{{this}}</p>
+                    {{/each}}
+                    {{#if success}}
+                    <p userShow>{{successMessage}}</p>
+                    {{/if}} --}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-copyright copyright text-center py-3">© 2018 Copyright: No.13 group</div>

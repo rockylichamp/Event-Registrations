@@ -1,0 +1,53 @@
+Steps to start project
+
+1. Got to the project file path in comand prompt where app.js is located and and type npm install and press enter.
+   It will create core modules and dependency modules. 
+
+2. To create Forms,Users you need to run seed.js file.
+   To run seed.js file go to the file path in command prompt and type node seed.js and press enter. The record gets created into database.
+
+   Records created for User:
+   There are three records created of user:
+	1.Username : hindalka@stevens.edu
+	  Password : harishIndalkar
+	2.Username : hchavan@stevens.edu
+	  Password : himanshuChavan
+	3.Username : schavan7@stevens.edu
+	  Password : shreeshChavan
+
+   Records created for Admin:
+	1.Username : phill@stevens.edu
+	  Password : patrickHill
+
+3.In the same file path in comand prompt type npm start. Server gets started.
+
+4.Make sure that the internet is connected because project contains cdn links.
+
+5.Go to a web browser and type localhost:3000, login page will appear. 
+
+6.To create a user enter details in sign up form.
+
+7.Enter username and password to login and home page appears.(USER PROCESS)
+	On home page upcoming events can be seen and if not it will display an image of no events.
+	Click on Register event and a new page will appear to fill details of person collecting tickets and number of people comming to event.
+	Button is disabled unless the input fields are matched criteria and it will appear as you click on it. A successfull message will appear on screen.
+	After successfully message appears the event will move to registerd event and click on registerd event to check the event appeared there.
+	Further to update or cancel ticket you can do in registered event part.
+	Click on cancel ticket it will cancel the tickets and redirect to home page.
+	To check the comments or to add comment click on events comment button and it will redirect to comment section.
+	if user haven't added any comments it will showll a text box to add comment followed by rest users comment.
+	Click on logout to end the session and it will redirect to login page.
+
+8. Enter username and password to login and home page appears.(ADMIN PROCESS)
+	On home page a user can see three tabs, first of create form, view forms and registerd for events.
+	On create form user has to create a form so that user can register for the event. Fill the details and it will create form.
+	On View Forms user can check for all forms and can delete and update the form and can see the comments that user have added for the event.
+	On Registered for event tab, the events appears on button just click on it and user can see the people who have registered for event.
+	Log out to end the session.
+
+9. Walk through presendation link is :https://www.youtube.com/watch?v=572s9cPAoo0
+
+10: Git link : https://github.com/1993-INDALKAR/Online-Event-Registrations.git
+ 
+
+ 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6" style="background-color:#38A1F3;">
+                <div class="h-100 d-inline-block" style="background-color:#38A1F3"></div>
+            </div>
+            <div class="col-sm-6" style="background-color:lavenderblush;">
+                <div class="container-fluid">
+
+                    <form id="signin" class="navbar-form navbar-right" role="form">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" value=""
+                                placeholder="Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="login-btn">Login</button>
+                    </form>
+                    <div>
+                        <a id="pforget" href="" rel="noopener">Forgot password?</a>
+                    </div>
+                </div>
+
+                <div class="" id="signup-div">
+                    <div id="signup-header" class="">
+                        <h2>Sign Up</h2>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade in active" id="signup-tab">
+                        <form method="POST" action="\registrationUser" id="signup-form" style="padding-top: 20px">
+                            <div id="form-group-fname" class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input required id="s-name" name="First_Name" type="text" class="form-control"
+                                    placeholder="First Name">
+                            </div>
+                            <br>
+                            <div id="form-group-lname" class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input required id="l-name" name="Last_Name" type="text" class="form-control"
+                                    placeholder="Last Name">
+                            </div>
+                            <br>
+                            <div id="form-group-email" class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input required id="s-email" name="email" type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <br>
+                            <div id="form-group-date" class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                <input required id="dob" name="dob" type="date" class="form-control" placeholder="Date of Birth">
+                            </div>
+                            <br>
+                            <div id="form-group-password" class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input required id="s-password" name="password" type="password" class="form-control"
+                                    placeholder="Password">
+                            </div>
+                            <br>
+                            <div id="form-group-r-password" class="input-group" id="form-group-r-password">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input required id="r-password" name="r-password" type="password" class="form-control"
+                                    placeholder="Re-Enter Password">
+                            </div>
+                            <br>
+                            <div class="form-group ">
+                                <button name="signup" type="submit" class="btn btn-success form-control" id="signup-btn"
+                                    value="Sign Up!">Sign Up!                             </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer-div">
+            <p>Copyrights: CS 546-A Group-13</p>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "events project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harish Indalkar, Himanshu Chavan,Zuo Li,Shu Chao",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^3.1.10",
+    "nodemailer": "^4.7.0",
+    "path": "^0.12.7",
+    "uuid": "^3.3.2",
+    "xss": "^1.0.3"
+  }
+}
