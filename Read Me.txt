@@ -44,10 +44,6 @@ Steps to start project
 	On View Forms user can check for all forms and can delete and update the form and can see the comments that user have added for the event.
 	On Registered for event tab, the events appears on button just click on it and user can see the people who have registered for event.
 	Log out to end the session.
-
-9. Walk through presendation link is :https://www.youtube.com/watch?v=572s9cPAoo0
-
-10: Git link : https://github.com/1993-INDALKAR/Online-Event-Registrations.git
  
 
  
