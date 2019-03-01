@@ -8,8 +8,8 @@ Steps to start project
 
    Records created for User:
    There are three records created of user:
-	1.Username : hindalka@stevens.edu
-	  Password : harishIndalkar
+	1.Username : zli119@stevens.edu
+	  Password : Rockyli123!
 	2.Username : hchavan@stevens.edu
 	  Password : himanshuChavan
 	3.Username : schavan7@stevens.edu
